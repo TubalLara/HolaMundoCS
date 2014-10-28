@@ -12,7 +12,7 @@ namespace Hola_Mundo_cs
         //no podemos utilizar var a nivel de clase, solo dentro de funciones
         //el main es static con lo cual no se puede acceder a la variable desde dentro del static
         
-        static void Main(string[] args)
+        static void Mai(string[] args)
         {
             var edad = 22;//reconoce la variable solo como una de 32 bits
 
@@ -38,7 +38,7 @@ namespace Hola_Mundo_cs
                 Console.WriteLine("La posición {0} vale {1}",i,arr1[i]);
             }
 
-            foreach (var i in arr2)
+            foreach (var i in arr2) //el for each no utiliza el índice, no puedes saber la posición ya que los busca por referencia
             {
                 Console.WriteLine("Vale {0}", i); //esta es la segunda forma de recorrelo, con el for each, lo que estoy haciendo es básicamente lo mismo de las dos maneras   
             }
